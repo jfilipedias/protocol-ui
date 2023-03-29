@@ -9,18 +9,35 @@ export default function Header() {
       </button>
 
       <div className="flex items-center">
-        <nav>
-          <a href="">API</a>
-          <a href="">Documentation</a>
-          <a href="">Support</a>
+        <nav className="flex items-center gap-6 text-sm">
+          <a
+            className="text-zinc-400 transition-colors hover:text-zinc-100"
+            href=""
+          >
+            API
+          </a>
+          <a
+            className="text-zinc-400 transition-colors hover:text-zinc-100"
+            href=""
+          >
+            Documentation
+          </a>
+          <a
+            className="text-zinc-400 transition-colors hover:text-zinc-100"
+            href=""
+          >
+            Support
+          </a>
         </nav>
 
-        <div>
+        <div className="ml-6 flex items-center gap-6 border-l border-white/10 pl-6">
           <button>
-            <Moon size={14} />
+            <Moon className="text-zinc-100" size={14} />
           </button>
 
-          <button>Sign in</button>
+          <button className="rounded-full border border-emerald-800 bg-emerald-400/10 px-3 py-1 text-sm font-medium text-emerald-400 transition-colors hover:border-emerald-300 hover:text-emerald-300">
+            Sign in
+          </button>
         </div>
       </div>
     </header>
